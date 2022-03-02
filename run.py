@@ -35,3 +35,9 @@ from wordlist import dictionary
     # Main logics of the game
     # Displaying logo of the game
     print(LOGO)
+
+    # Introductory messages for the player
+    name = input("Enter Your Name:\n").capitalize()
+    print("\n")
+    print("Welcome to 'Hangman - Fruits & Vegetables'", name)
+    print("Try to guess the word in less than 6 moves!")
