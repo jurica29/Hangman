@@ -41,3 +41,11 @@ from wordlist import dictionary
     print("\n")
     print("Welcome to 'Hangman - Fruits & Vegetables'", name)
     print("Try to guess the word in less than 6 moves!")
+
+     # Main loop starting with a compound statement
+    while wrong_guesses < max_attempts and current_guess != word:
+        print(IMAGES[wrong_guesses])
+        print("So far, the word is: ", current_guess)
+        guess = input("Enter your character guess:\n")
+    # Converting user guess to uppercase letter
+        guess = guess.upper()
