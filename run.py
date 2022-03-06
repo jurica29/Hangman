@@ -83,3 +83,9 @@ from wordlist import dictionary
                     new_current_guess += current_guess[letter]
         # Reassigning current guess to be a new version
             current_guess = new_current_guess
+        # If the guess is longer than one letter or not a letter
+        # Display the warning message and decrease lives
+        elif len(guess) != 1:
+            print("WARNING! You need to use one character per turn!")
+            wrong_guesses += 1
+            empty_inputs += 1
