@@ -26,8 +26,8 @@ from wordlist import dictionary
     # Wrong guess counter
     wrong_guesses = 0
 
-    # Number of invalid inputs
-    attempts = 0
+    # Repeated inputs counter
+    repeated_inputs = 0
 
     # List of guesses(letters)
     used_letters = []
@@ -49,3 +49,16 @@ from wordlist import dictionary
         guess = input("Enter your character guess:\n")
     # Converting user guess to uppercase letter
         guess = guess.upper()
+
+        # Check if letter was already used and
+        # if there was no empty input
+        # decrease lives if it was
+        if guess in used_letters and len(guess) == 1:
+            wrong_guesses += 1
+            repeated_inputs += 1
+            empty_inputs += 1
+            print("WARNING! You've already tried that!")
+            print("\n")
+            guess = guess.upper()
+        # Add new guessed letter to list of guessed letters
+        used_letters.append(guess)
