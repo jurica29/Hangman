@@ -2,11 +2,11 @@ import random
 from graphics import IMAGES, LOGO
 from wordlist import dictionary
 
+
 def main():
     """
     Main function which contains the whole game code.
     """
-
 
     def fetch_word():
         """
@@ -138,3 +138,27 @@ def main():
     # This is intended for repeated inputs
     else:
         print("WELL DONE!""\n""You've guessed the correct word: :)", word)
+
+    # RESTART GAME
+    # with the possibility of trying again or exiting the game.
+    print("\n")
+    repeat = input("RESTART GAME: Y/N\n").capitalize()
+    if repeat == "Y":
+        main()
+    elif repeat == "N":
+        print("Goodbye!")
+        exit()
+
+    # If the user chooses some other letter or symbol
+    # this reminds them to use a valid input to restart the game.
+    else:
+        print("Please input valid character!")
+        repeat = input("RESTART GAME: Y/N\n").capitalize()
+        if repeat == "Y":
+            main()
+        else:
+            print("Goodbye!")
+            exit()
+
+
+main()
