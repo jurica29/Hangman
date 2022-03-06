@@ -94,3 +94,6 @@ from wordlist import dictionary
         elif guess.isalpha() is False:
             wrong_guesses += 1
             print("WARNING! You must use one valid character per turn!")
+        # If the guess is a repeated input and not in word
+        elif repeated_inputs >= 1 and guess not in word:
+            print("WARNING! Your lives are being decreased!"" :(")
