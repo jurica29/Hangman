@@ -42,7 +42,8 @@ from wordlist import dictionary
     print("Welcome to 'Hangman - Fruits & Vegetables'", name)
     print("Try to guess the word in less than 6 moves!")
 
-     # Main loop starting with a compound statement
+    # GAME LOOP
+    # Main loop starting with a compound statement
     while wrong_guesses < max_attempts and current_guess != word:
         print(IMAGES[wrong_guesses])
         print("So far, the word is: ", current_guess)
@@ -62,3 +63,13 @@ from wordlist import dictionary
             guess = guess.upper()
         # Add new guessed letter to list of guessed letters
         used_letters.append(guess)
+
+        # Check if guessed letter is located in the given secret word
+        # and if guess is empty input
+        if guess in word and guess != "":
+            if repeated_inputs < 1:
+                print("\n")
+                print("You've guessed correctly! :)")
+
+            # Give a new version of the word with mixed letters and dashes
+            new_current_guess = ""
