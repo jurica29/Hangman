@@ -108,3 +108,12 @@ from wordlist import dictionary
             print("\n")
             print("Better luck next time!"" :(")
             wrong_guesses += 1
+    
+    # END GAME
+    # If the user had the max number of incorrect guesses then they've lost,
+    #  if not they won.
+    if wrong_guesses == max_attempts:
+        print(IMAGES[wrong_guesses])
+        print("SORRY! YOU'VE LOST! :(")
+        print("\n")
+        print("The correct word is:", word)
