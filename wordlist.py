@@ -16,4 +16,5 @@ dictionary = [
     "PEPO",
     "MAST",
     "OKRA",
+    "POME",
 ]
