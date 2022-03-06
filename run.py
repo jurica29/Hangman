@@ -97,3 +97,14 @@ from wordlist import dictionary
         # If the guess is a repeated input and not in word
         elif repeated_inputs >= 1 and guess not in word:
             print("WARNING! Your lives are being decreased!"" :(")
+        # If the guess is one incorrect letter
+        # display the message and decrease number of lives.
+        elif guess != used_letters:
+            print("\n")
+            print("Better luck next time!" " :(")
+            # Increase number of incorrect by 1
+            wrong_guesses += 1
+        else:
+            print("\n")
+            print("Better luck next time!"" :(")
+            wrong_guesses += 1
