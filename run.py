@@ -117,3 +117,9 @@ from wordlist import dictionary
         print("SORRY! YOU'VE LOST! :(")
         print("\n")
         print("The correct word is:", word)
+    # If the inputs were repeatedly empty then user loses
+    elif empty_inputs > 5:
+        max_attempts = 6
+        wrong_guesses = 6
+        print(IMAGES[wrong_guesses])
+        print("SORRY! You've lost due to invalid inputs!")
