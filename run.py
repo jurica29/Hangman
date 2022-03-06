@@ -73,3 +73,13 @@ from wordlist import dictionary
 
             # Give a new version of the word with mixed letters and dashes
             new_current_guess = ""
+        # Checking every letter inside the word
+        # if the guessed letter is equal the the one in word
+        # then swap it with the actual letter.
+            for letter in range(len(word)):
+                if guess == word[letter]:
+                    new_current_guess += guess
+                else:
+                    new_current_guess += current_guess[letter]
+        # Reassigning current guess to be a new version
+            current_guess = new_current_guess
