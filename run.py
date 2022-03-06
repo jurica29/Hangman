@@ -89,3 +89,8 @@ from wordlist import dictionary
             print("WARNING! You need to use one character per turn!")
             wrong_guesses += 1
             empty_inputs += 1
+        # If the guess is not a letter, then display the warning message
+        # increase wrong guesses
+        elif guess.isalpha() is False:
+            wrong_guesses += 1
+            print("WARNING! You must use one valid character per turn!")
