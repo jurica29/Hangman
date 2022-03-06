@@ -1,9 +1,11 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
 import random
 from graphics import IMAGES, LOGO
 from wordlist import dictionary
+
+def main():
+    """
+    Main function which contains the whole game code.
+    """
 
 
     def fetch_word():
@@ -28,6 +30,9 @@ from wordlist import dictionary
 
     # Repeated inputs counter
     repeated_inputs = 0
+
+    # Empty inputs counter
+    empty_inputs = 0
 
     # List of guesses(letters)
     used_letters = []
