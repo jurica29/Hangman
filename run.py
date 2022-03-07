@@ -46,6 +46,7 @@ def main():
     print("\n")
     print("Welcome to 'Hangman - Fruits & Vegetables'", name)
     print("Try to guess the word in less than 6 moves!")
+    print("IMPORTANT: You have to use one valid character per turn!")
 
     # GAME LOOP
     # Main loop starting with a compound statement
