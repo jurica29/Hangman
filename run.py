@@ -61,8 +61,9 @@ def main():
         # if there was no empty input
         # decrease lives if it was
         if guess in used_letters and len(guess) == 1:
+            wrong_guesses += 1
             repeated_inputs += 1
-            empty_inputs += 1
+            print("\n")
             print("WARNING! You've already tried that!")
             print("\n")
             guess = guess.upper()
@@ -75,9 +76,7 @@ def main():
             if repeated_inputs == 0:
                 print("You've guessed correctly! :)")
 
-
-
-            # Give a new version of the word with mixed letters and dashes
+        # Give a new version of the word with mixed letters and dashes
             new_current_guess = ""
         # Checking every letter inside the word
         # if the guessed letter is equal the the one in word
