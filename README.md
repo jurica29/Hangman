@@ -144,7 +144,7 @@ Press Enter. Your local clone will be created.
 
 ### Work based on other code
 
-[EarthLab](https://www.earthdatascience.org/courses/use-data-open-source-python/intro-to-apis/twitter-data-in-python/) - Used as a base for firsts pieces of code on this project.<br>
+[Udemy Python Bootcamp](https://www.udemy.com/course/100-days-of-code//) - Used as an inspiration for the concept of the game.<br>
 
 # Acknowledgements
 
