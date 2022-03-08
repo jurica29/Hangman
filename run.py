@@ -42,7 +42,13 @@ def main():
     print(LOGO)
 
     # Introductory messages for the player
-    name = input("Enter Your Name:\n").capitalize()
+    print("Please choose a 6-character name")
+    while True:
+        name = input("Enter Your Name:\n")[:6].strip().capitalize()
+        if name.isalpha():
+            break
+        print("Please enter characters A-Z only")
+
     print("\n")
     print("Welcome to 'Hangman - Fruits & Vegetables'", name)
     print("Try to guess the 4-letter word in less than 6 moves!")
@@ -54,7 +60,7 @@ def main():
         print(IMAGES[wrong_guesses])
         print("So far, the word is: ", current_guess)
         guess = input("Enter your character guess:\n")
-    # Converting user guess to uppercase letter
+        # Converting user guess to uppercase letter
         guess = guess.upper()
 
         # Check if letter was already used and
@@ -76,17 +82,17 @@ def main():
             if repeated_inputs == 0:
                 print("You've guessed correctly! :)")
 
-        # Give a new version of the word with mixed letters and dashes
+            # Give a new version of the word with mixed letters and dashes
             new_current_guess = ""
-        # Checking every letter inside the word
-        # if the guessed letter is equal the the one in word
-        # then swap it with the actual letter.
+            # Checking every letter inside the word
+            # if the guessed letter is equal the the one in word
+            # then swap it with the actual letter.
             for letter in range(len(word)):
                 if guess == word[letter]:
                     new_current_guess += guess
                 else:
                     new_current_guess += current_guess[letter]
-        # Reassigning current guess to be a new version
+            # Reassigning current guess to be a new version
             current_guess = new_current_guess
         # If the guess is longer than one letter or not a letter
         # Display the warning message and decrease lives
@@ -109,9 +115,9 @@ def main():
             wrong_guesses += 1
         else:
             print("\n")
-            print("Better luck next time!"" :(")
+            print("Better luck next time!" " :(")
             wrong_guesses += 1
-    
+
     # END GAME
     # If the user had the max number of incorrect guesses then they've lost,
     #  if not they won.
@@ -136,8 +142,7 @@ def main():
     # This is intended for repeated inputs
     else:
         print("\n")
-        print("WELL DONE!""\n""You've guessed the correct word: :)", word)
-
+        print("WELL DONE!" "\n" "You've guessed the correct word: :)", word)
     # RESTART GAME
     # with the possibility of trying again or exiting the game.
     print("\n")
