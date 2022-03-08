@@ -61,7 +61,6 @@ def main():
         # if there was no empty input
         # decrease lives if it was
         if guess in used_letters and len(guess) == 1:
-            wrong_guesses += 1
             repeated_inputs += 1
             empty_inputs += 1
             print("WARNING! You've already tried that!")
