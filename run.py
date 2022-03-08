@@ -45,7 +45,7 @@ def main():
     name = input("Enter Your Name:\n").capitalize()
     print("\n")
     print("Welcome to 'Hangman - Fruits & Vegetables'", name)
-    print("Try to guess the word in less than 6 moves!")
+    print("Try to guess the 4-letter word in less than 6 moves!")
     print("IMPORTANT: You have to use one valid character per turn!")
 
     # GAME LOOP
@@ -71,10 +71,11 @@ def main():
         used_letters.append(guess)
 
         # Check if guessed letter is located in the given secret word
-        # and if guess is empty input
+        # and if guess is not an empty input
         if guess in word and guess != "":
-            if repeated_inputs < 1:
-                print("\n")
+            if guess in used_letters:
+                pass
+            else:
                 print("You've guessed correctly! :)")
 
             # Give a new version of the word with mixed letters and dashes
