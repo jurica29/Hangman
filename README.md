@@ -84,6 +84,11 @@ Heroku: Heroku is used for deployment of the project.
 
 ## Testing and Code validation 
 
+Code was tested multiple times manually and all files were tested in PEP8 online validator.
+
+Only one message came up as a potential issue in one file:
+
+<img src="images/readme_images/pep8.3.jpg">
 
 ## Deployment 
 
