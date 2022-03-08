@@ -39,20 +39,30 @@ The following flowchart shows the flow of "Hangman" graphically.
 
 ## Features
 
-### Welcome message 
+### Username input
 
-Welcome user to the app. 
+Ask user to input a valid username.
 
-<img src="images/readme_images/greetings.png">
+<img src="images/readme_images/hangman1.jpg">
 
-### User options
+### Welcome message
 
-### Returning user defined options.
+Introductory messages and basic display of main game components.
 
-<img src="images/readme_images/tweets_table_explained.png">
+<img src="images/readme_images/hangman2.jpg">
 
-### Option 3
+### Feedback message
 
+Feedback message and graphics relevant to the input.
+Images change if user loses lives, if not then image stays the same.
+
+<img src="images/readme_images/hangman3.jpg">
+
+### End game message
+
+Feedback message and graphics relevant to users' progress during the game.
+
+<img src="images/readme_images/hangman4.jpg">
 
 ## Future Features
 
@@ -70,6 +80,7 @@ Python 3.0
 
 Git: Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 GitHub: GitHub is used to store the project's code after being pushed from Git.
+Heroku: Heroku is used for deployment of the project.
 
 ## Testing and Code validation 
 
