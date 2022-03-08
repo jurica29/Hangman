@@ -32,11 +32,35 @@ Create a fun game for users of all ages.
 2. clear and input relevant feedback
 3. possibility of restarting the game at the end
 
+ ## Project Purpose
+
+Create an app that can search tweets using Twitter API and outputs tweets with a chosen keyword in a max range of 100km. Also, create a table data with all tweets location grouped and counted. Data created can be viewed on terminal or stored on Google Spreadsheets. 
+
+## User Experience
+
+### User Stories
+
++ As a user, I would like to be able to …
+
+1. easily add my preferred information like City, Country, language and keyword;
+2. easily check if my information is correct;
+3. decide if I want to get outputs on my terminal or just save data on Google spreadsheets;
+4. check my created data on Google Spreadsheet.
+
+### App Owner Stories
+
++ As App Owner Stories, I would like to be able to provide …
+
+1. a simple, straightforward intuitive user experience;
+2. clear output data on the terminal or cloud storage;
+3. user's feedback in case of wrong input.
+4. give the user the possibility to restart app in case of fatal errors.
+
 ## Functional Scope 
 
 The following flowchart shows the flow of "Search your brand" graphically.
 
-<img width= "800" src="images/readme_images/hangmanflowchart.jpg">
+<img width= "800" src="images/readme_images/search_your_brand_flowchart.png">
 
 ## Features
 
@@ -48,55 +72,20 @@ Welcome user to the app.
 
 ### User options
 
-Enable user to choose some options as Country, City, Keyword and Preferred Language. 
-
-<img src="images/readme_images/options.png">
-
-If City or Country options couldn't be validated by the geolocation function the user has the option to restart and try again. 
-
-<img src="images/readme_images/testing/e_geoloc.png">
-
-Users can choose between four different languages to search on Twitter (English-en, Spanish-es, Portuguese-pt and German-de)
-The English language is set by default if the user doesn't want to set his own choice or write any wrong option. 
-
 ### Returning user defined options.
-
-<img src="images/readme_images/returning-inputs.png">
-
-Allows the user to review options set to the app in order to search tweets and choose to get data output on the termial or not.  
-If the user set yes all the data collected from Twitter will be print on the terminal. 
-
-<img src="images/readme_images/output_tweets.png">
-<img src="images/readme_images/output_tweetsloc.png">
-
-Tweets table has some columns added from Twitter API (marked with a red line on the image below) as tweet creation date, tweet text, username and location. 
-Search date, keyword and language were added to the table (marked with a green line on the image below) in order to add information about internal app search details. 
 
 <img src="images/readme_images/tweets_table_explained.png">
 
-### Google Spreadsheets save option
-
-Allows the user to save Tweets data created on Google Spreadsheets. A link for current spreadsheets file deployed on Heroku is also available, facilitating users trying app there navigation.
-
-<img src="images/readme_images/output_save_gspread.png">
-
-* Tweets table on Gspreadsheets
-<img width ="800" src="images/readme_images/tweets_gspread.png">
-
-* Tweets by location table on Gspreadsheets
-<img width ="800" src="images/readme_images/tweets_by_location.png">
+### Option 3
 
 
 ## Future Features
 
 I would like to ...
 
-1. return to use argparse modules to make it easy to write user-friendly command-line interfaces;
-2. add more language options on Tweets Search;
-3. add options to search data in different social media like Instagram, Facebook and Tik Tok;
-4. add a user option to save data on different files formats like CSV and APACHE PARQUET;
-5. dinamic create a short link to the google spreadsheets defined;
-6. use tweets_count data frame to add a pin in a map to better visualization about tweets location.
+1. add more levels of difficulties with various words;
+2. add hints which could help user to find out the secret word more easily;
+3. add option for storing the highscores;
 
 ## Languages Used
 
@@ -104,18 +93,11 @@ Python 3.0
 
 ## Frameworks, Libraries & Programs Used
 
-Grammarly: Used to correct any spell mistakes on readme and app text.
 Git: Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 GitHub: GitHub is used to store the project's code after being pushed from Git.
-Google Spreadsheets API: Used to storage Search table data. 
-Geopy: Used to locate the user's coordinates based on city and country.
-Pandas: Used for data analyse and dataframe creation. 
-Tweepy: Used to access the Twitter API with Python. 
-Twitter API: Used to interact and get Tweets Data related to user keyword.
 
 ## Testing and Code validation 
 
-All testing and code validation details are described in a separate file called TESTING.md and can be found [here](TESTING.md).
 
 ## Project Bugs and Solutions:
 
@@ -210,97 +192,12 @@ This app is deployed using Heroku.
 $ git clone https://github.com/nandabritto/search_your_brand
 
 Press Enter. Your local clone will be created.
-</details>
-
-## Activating Google API Credential
-
-API will allow our Python project to access and update data in our spreadsheet. 
-
-<details>
-<summary>API activating steps</summary>
-
-1. Go to the google cloud website (https://cloud.google.com). 
-2.Sign in or login to google cloud and click on the“Select a project and then select new project.
-
-<img src="images/readme_images/deployment/google_api/start.png">
-
-3. Add your project name and click in create. 
-
-<img src="images/readme_images/deployment/google_api/newproject.png">
-
-4. Navigate to API and Services
-
-<img src="images/readme_images/deployment/google_api/google_list.png">
-
-5. Click on Library
-
-6. First enable Google Drive API
-
-7. Second enable Google Sheets API.
-
-8. Click in create credentials and fill out the form. (Service account Id must be copied from your table on google spreadsheets share option)
-
-<img src="images/readme_images/deployment/google_api/data_app.png">
-
-9. Click the Application data button.
-
-<img src="images/readme_images/deployment/google_api/app_details.png">
-
-1.0 Select I am not using them for compute engine, App engine or cloud platform.
-
-11. Then click the next and then the done button.
-
-12. Then go to APIs and Services, click credential then can see a service account.
-
-13. Click the service account and Keys tab.
-
-<img src="images/readme_images/deployment/google_api/keys.png"> 
-
-14. Click on the Add Key and select Create New Key. 
-
-15. Select JSON and then click Create. 
-
-<img src="images/readme_images/deployment/google_api/jsonkey.png">
-
-16. This will trigger the JSON file with your API credentials in it to download to the computer. 
-
-17. Add on your gitpod space. Copy all information from this file and add it to a .env file.
-
-` CREDS = {all data from json file}`
-</details>
-
-## Activating Twitter API
-
-API will allow our Python project to access data on the Twitter website.
-
-<details>
-<summary>API activating steps</summary>
-
-1. Create a free Twitter user account(www.twitter.com)
-
-2. Access the Twitter developer portal(https://developer.twitter.com/en)
-
-3. Click on Projects and Apps
-
-<img src="images/readme_images/deployment/twitter_api/devportal_twitter.png">
-
-4. Click in Create a New App
-
-<img src="images/readme_images/deployment/twitter_api/twitterapi_new.png">
-
-5. Choose your app name and create. After this, you will have access to all keys. Copy and paste in a .env file on gitpod. 
-
-</details>
 
 # Credits
 
 ### Work based on other code
 
 [EarthLab](https://www.earthdatascience.org/courses/use-data-open-source-python/intro-to-apis/twitter-data-in-python/) - Used as a base for firsts pieces of code on this project.<br>
-[Kdnuggets](https://www.kdnuggets.com/2017/03/beginners-guide-tweet-analytics-pandas.html) - Used to understand better all pandas library functions used on this project.<br>
-SamOh/trend_map Github - Used to  write function to get API variables from .env file.<br>
-W3 Schools - Used to write some error handling codes on functions.<br>
-[Learn Python with Rune](https://www.learnpythonwithrune.org/how-to-plot-locations-of-tweets-on-map-using-python-in-3-easy-steps/)- Used as a base for search tweets function.
 
 # Acknowledgements
 
@@ -310,7 +207,6 @@ W3 Schools - Used to write some error handling codes on functions.<br>
 
 I would also like to thank:
 
-+ My husband Guilherme for all the support on stressful moments, help to figure out lots of bugs and for reviewing everything.
++ My fiancée Maja for her patience and support.
 + My mentor Rahul Lakhanpal for his time, support and guidance.
-+ Code institute tutors, for help with several issues and bugs.
 
