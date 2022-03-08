@@ -99,15 +99,6 @@ GitHub: GitHub is used to store the project's code after being pushed from Git.
 ## Testing and Code validation 
 
 
-## Project Bugs and Solutions:
-
-| Bugs              | Solutions |
-| ---               | --------- |
-| When a user adds a country or city that is not recognized by geopy library, no country or city parameters were passed to tweepy, failing API call.| Add an error handling to test if the location is None and raise an exception, print the error and allows user restart the app to add new parameters. 
-| When tested on Heroku prints and inputs were hidden because of a lack of new line after code. | Add a new line after every input and print text to allows Heroku to show it and allows the app to flow correctly. 
-| During tests when the user added a language using the entire word, an error was raised. Tweepy just recognizes language abbreviations. The same happened when a wrong abbreviation was input from the user. | To solve this bug just four languages can be used and an English default language was added in case language is None. For future releases, new languages will be added. 
-| When tested, Heroku required all credentials to be Environment Variables. As best practice defined by Google, all variables were in a creds.json file. | Add google credentials in .env file as Environment Variables to allow Heroku to read it and load Google Spreadsheets API. 
-
 ## Deployment 
 
 This app is deployed using Heroku.
