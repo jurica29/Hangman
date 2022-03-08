@@ -135,6 +135,7 @@ def main():
         print("The correct word is:", word)
     # This is intended for repeated inputs
     else:
+        print("\n")
         print("WELL DONE!""\n""You've guessed the correct word: :)", word)
 
     # RESTART GAME
