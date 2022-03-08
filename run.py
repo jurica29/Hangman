@@ -42,6 +42,7 @@ def main():
     print(LOGO)
 
     # Introductory messages for the player
+    # and add validity check for username
     print("Please choose a 6-character name")
     while True:
         name = input("Enter Your Name:\n")[:6].strip().capitalize()
@@ -132,6 +133,8 @@ def main():
         wrong_guesses = 6
         print(IMAGES[wrong_guesses])
         print("SORRY! You've lost due to invalid inputs!")
+    # If the number of wrong guesses surpasses 5
+    # then the game is lost
     elif wrong_guesses > 5:
         max_attempts = 6
         wrong_guesses = 6
@@ -139,7 +142,7 @@ def main():
         print("SORRY! YOU'VE LOST! :(")
         print("\n")
         print("The correct word is:", word)
-    # This is intended for repeated inputs
+    # Winning message
     else:
         print("\n")
         print("WELL DONE!" "\n" "You've guessed the correct word: :)", word)
