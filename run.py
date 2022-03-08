@@ -74,9 +74,8 @@ def main():
         if guess in word and guess != "":
             if repeated_inputs == 0:
                 print("You've guessed correctly! :)")
-            elif guess in used_letters:
-                print("This correct answer was used before!")
-                wrong_guesses += 1
+
+
 
             # Give a new version of the word with mixed letters and dashes
             new_current_guess = ""
