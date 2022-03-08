@@ -73,9 +73,7 @@ def main():
         # Check if guessed letter is located in the given secret word
         # and if guess is not an empty input
         if guess in word and guess != "":
-            if guess in used_letters:
-                pass
-            else:
+            if repeated_inputs == 0:
                 print("You've guessed correctly! :)")
 
             # Give a new version of the word with mixed letters and dashes
@@ -102,8 +100,6 @@ def main():
             wrong_guesses += 1
             print("WARNING! You must use one valid character per turn!")
         # If the guess is a repeated input and not in word
-        elif repeated_inputs >= 1 and guess not in word:
-            print("WARNING! Your lives are being decreased!"" :(")
         # If the guess is one incorrect letter
         # display the message and decrease number of lives.
         elif guess != used_letters:
