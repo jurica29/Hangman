@@ -99,53 +99,23 @@ This app is deployed using Heroku.
  2. Setting up your Heroku
 
     2.1 Go to Heroku website (https://www.heroku.com/). 
-    2.2 Login to Heroku and go to Create App.
-    
-    <img src="images/readme_images/deployment/heroku_login.png">
-    
-    <img src="images/readme_images/deployment/heroku_login2.png">
-    
-    2.3 Click in New and Create a new app
-    
-    <img src="images/readme_images/deployment/heroku_newapp.png">
-    
+    2.2 Login to Heroku and go to Create App
+    2.3 Click in New and Create a new app  
     2.4 Choose a name and set your location
-    
-    <img src="images/readme_images/deployment/heroku_createnewapp.png">
-    
     2.5. Navigate to the deploy tab
-    
-    <img src="images/readme_images/deployment/heroku_dashboard_deploy.png">
-    
     2.6. Click in Connect to Github and search for 'nandabritto' GitHub account and 'search_your_brand' repository
-    
-    <img src="images/readme_images/deployment/heroku_github_deploy.png">
-    
     2.7.  Navigate to the settings tab
-    
-    <img src="images/readme_images/deployment/heroku_dashboard_settings.png">
-    
     2.8.  Click on Config Vars, and add your Twitter and Google Sheets API keys, Google Spreadsheets file and worksheets names.
-    
-    <img src="images/readme_images/deployment/heroku_vars_settings.png">
-    
     2.9. Click on Add a buildpack on the same page. Select Python and node.js, ensuring Python is listed first after you save the changes.
-    
-    <img src="images/readme_images/deployment/heroku_buildpacks_settings.png">
 
 3. Deployment on Heroku
 
     3.1.  Navigate to the Deploy tab.
     
-    <img src="images/readme_images/deployment/heroku_dashboard_deploy.png">
-    
     3.2.  Choose main branch to deploy and enable automatic deployment to build Heroku everytime any changes are pushed on the repository.
-    
-    <img src="images/readme_images/deployment/heroku_automatic_deploys.png">
     
     3.3 Click on manual deploy to build the app.  When complete, click on View to redirect to the live site. 
     
-    <img src="images/readme_images/deployment/heroku_view.png">
 </details>
 
 <details>
@@ -166,7 +136,7 @@ This app is deployed using Heroku.
     Change the current working directory to the location where you want the cloned directory to be made.
     Type git clone, and then paste the URL you copied in Step 3.
 
-$ git clone https://github.com/nandabritto/search_your_brand
+$ git clone https://github.com/jurica29/Hangman/
 
 Press Enter. Your local clone will be created.
 
