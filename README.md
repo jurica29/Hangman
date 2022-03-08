@@ -23,7 +23,6 @@ Create a fun game for users of all ages.
 2. easily see the feedback and progress
 3. easily play again upon finishing the game
 
-
 ### App Owner Stories
 
 + As App Owner Stories, I would like to be able to provide …
@@ -32,35 +31,11 @@ Create a fun game for users of all ages.
 2. clear and input relevant feedback
 3. possibility of restarting the game at the end
 
- ## Project Purpose
-
-Create an app that can search tweets using Twitter API and outputs tweets with a chosen keyword in a max range of 100km. Also, create a table data with all tweets location grouped and counted. Data created can be viewed on terminal or stored on Google Spreadsheets. 
-
-## User Experience
-
-### User Stories
-
-+ As a user, I would like to be able to …
-
-1. easily add my preferred information like City, Country, language and keyword;
-2. easily check if my information is correct;
-3. decide if I want to get outputs on my terminal or just save data on Google spreadsheets;
-4. check my created data on Google Spreadsheet.
-
-### App Owner Stories
-
-+ As App Owner Stories, I would like to be able to provide …
-
-1. a simple, straightforward intuitive user experience;
-2. clear output data on the terminal or cloud storage;
-3. user's feedback in case of wrong input.
-4. give the user the possibility to restart app in case of fatal errors.
-
 ## Functional Scope 
 
-The following flowchart shows the flow of "Search your brand" graphically.
+The following flowchart shows the flow of "Hangman" graphically.
 
-<img width= "800" src="images/readme_images/search_your_brand_flowchart.png">
+<img width= "800" src="images/readme_images/hangmanflowchart.jpg">
 
 ## Features
 
