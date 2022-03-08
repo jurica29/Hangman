@@ -86,9 +86,11 @@ Heroku: Heroku is used for deployment of the project.
 
 Code was tested multiple times manually and all files were tested in PEP8 online validator.
 
-Only one message came up as a potential issue in one file:
+Only these messages came up as related to ASCII art file:
 
 <img src="images/readme_images/pep8.3.jpg">
+
+The other two files had no error or warning messages displayed in PEP8.
 
 ## Deployment 
 
