@@ -156,6 +156,7 @@ Press Enter. Your local clone will be created.
 ### Work based on other code
 
 [Udemy Python Bootcamp](https://www.udemy.com/course/100-days-of-code/) - Used as an inspiration for the concept of the game.<br>
+[ASCII art resource](https://gist.github.com/chrishorton/8510732aa9a80a03c829b09f12e20d9c/) - ASCII art used for the game.<br>
 
 # Acknowledgements
 
