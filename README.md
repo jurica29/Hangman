@@ -96,8 +96,7 @@ The other two files had no error or warning messages displayed in PEP8.
 
 This app is deployed using Heroku.
 
-<details>
-<summary>Heroku Deployment steps </summary>
+### Heroku Deployment steps
  
  1. Ensure all dependencies are listed on requirements.txt. 
  
@@ -109,24 +108,18 @@ This app is deployed using Heroku.
     2.2 Login to Heroku and go to Create App
     2.3 Click in New and Create a new app  
     2.4 Choose a name and set your location
-    2.5. Navigate to the deploy tab
-    2.6. Click in Connect to Github and search for 'nandabritto' GitHub account and 'search_your_brand' repository
-    2.7.  Navigate to the settings tab
-    2.8.  Click on Config Vars, and add your Twitter and Google Sheets API keys, Google Spreadsheets file and worksheets names.
-    2.9. Click on Add a buildpack on the same page. Select Python and node.js, ensuring Python is listed first after you save the changes.
+    2.5 Navigate to the deploy tab
+    2.6 Click in Connect to Github and search for 'jurica29' GitHub account and 'Hangman' repository
+    2.7 Navigate to the settings tab
+    2.8 Click on Add a buildpack on the same page. Select Python and node.js, ensuring Python is listed first after you save the changes.
 
 3. Deployment on Heroku
 
     3.1.  Navigate to the Deploy tab.
-    
     3.2.  Choose main branch to deploy and enable automatic deployment to build Heroku everytime any changes are pushed on the repository.
-    
     3.3 Click on manual deploy to build the app.  When complete, click on View to redirect to the live site. 
     
-</details>
-
-<details>
-<summary>Forking the GitHub Repository </summary>
+### Forking the GitHub Repository
 
 * By forking the GitHub Repository you will be able to make a copy of the original repository on your own GitHub account allowing you to view and/or make changes without affecting the original repository by using the following steps:
 
