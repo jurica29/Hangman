@@ -155,7 +155,7 @@ Press Enter. Your local clone will be created.
 
 ### Work based on other code
 
-[Udemy Python Bootcamp](https://www.udemy.com/course/100-days-of-code//) - Used as an inspiration for the concept of the game.<br>
+[Udemy Python Bootcamp](https://www.udemy.com/course/100-days-of-code/) - Used as an inspiration for the concept of the game.<br>
 
 # Acknowledgements
 
