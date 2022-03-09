@@ -77,10 +77,12 @@ I would like to ...
 Python 3.0
 
 ## Frameworks, Libraries & Programs Used
-
-Git: Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-GitHub: GitHub is used to store the project's code after being pushed from Git.
-Heroku: Heroku is used for deployment of the project.
+1. Git: 
+Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
+2. GitHub: 
+GitHub is used to store the project's code after being pushed from Git.
+3. Heroku: 
+Heroku is used for deployment of the project.
 
 ## Testing and Code validation 
 
@@ -104,20 +106,29 @@ This app is deployed using Heroku.
  
  2. Setting up your Heroku
 
-    2.1 Go to Heroku website (https://www.heroku.com/). 
-    2.2 Login to Heroku and go to Create App
-    2.3 Click in New and Create a new app  
-    2.4 Choose a name and set your location
-    2.5 Navigate to the deploy tab
-    2.6 Click in Connect to Github and search for 'jurica29' GitHub account and 'Hangman' repository
-    2.7 Navigate to the settings tab
-    2.8 Click on Add a buildpack on the same page. Select Python and node.js, ensuring Python is listed first after you save the changes.
+    1. Go to Heroku website (https://www.heroku.com/). 
+
+    2. Login to Heroku and go to Create App
+
+    3. Click in New and Create a new app  
+
+    4. Choose a name and set your location
+
+    5. Navigate to the deploy tab
+
+    6. Click in Connect to Github and search for 'jurica29' GitHub account and 'Hangman' repository
+
+    7. Navigate to the settings tab
+
+    8. Click on Add a buildpack on the same page. Select Python and node.js, ensuring Python is listed first after you save the changes.
 
 3. Deployment on Heroku
 
-    3.1.  Navigate to the Deploy tab.
-    3.2.  Choose main branch to deploy and enable automatic deployment to build Heroku everytime any changes are pushed on the repository.
-    3.3 Click on manual deploy to build the app.  When complete, click on View to redirect to the live site. 
+    1.  Navigate to the Deploy tab.
+
+    2.  Choose main branch to deploy and enable automatic deployment to build Heroku everytime any changes are pushed on the repository.
+    
+    3.   Click on manual deploy to build the app.  When complete, click on View to redirect to the live site. 
     
 ### Forking the GitHub Repository
 
